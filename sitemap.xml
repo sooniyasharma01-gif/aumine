@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://auteena.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/"/>
+    <priority>1.0</priority><changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/intro</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/intro"/>
+    <priority>0.9</priority><changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/gallery</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/gallery"/>
+    <priority>0.8</priority><changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/rates</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/rates"/>
+    <priority>0.9</priority><changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/contact"/>
+    <priority>0.9</priority><changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/screening</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/screening"/>
+    <priority>0.7</priority><changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/faq"/>
+    <priority>0.7</priority><changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/availability</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/availability"/>
+    <priority>0.8</priority><changefreq>weekly</changefreq>
+  </url>
+</urlset>
