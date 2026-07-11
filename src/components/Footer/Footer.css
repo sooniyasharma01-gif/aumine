@@ -1,0 +1,159 @@
+.footer {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(201, 169, 110, 0.2);
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 48px 28px 32px;
+}
+
+/* ── TOP ROW ── */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+  gap: 24px;
+}
+
+/* BRAND */
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 400;
+  color: #1a1a1a;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.footer-tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9a96e;
+}
+
+/* NAV */
+.footer-nav {
+  display: flex;
+  gap: 24px 36px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 600px;
+}
+
+.footer-nav a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.footer-nav a:hover,
+.footer-nav a.active {
+  color: #c9a96e;
+}
+
+/* ── DIVIDER ── */
+.footer-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.footer-divider::before,
+.footer-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(201,169,110,0.4), transparent);
+}
+
+.footer-diamond {
+  width: 6px;
+  height: 6px;
+  background: #c9a96e;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* ── BOTTOM ROW ── */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: #aaa;
+  letter-spacing: 0.5px;
+}
+
+.footer-bottom-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.footer-privacy {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: #c9a96e;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s;
+}
+
+.footer-privacy:hover { opacity: 0.7; }
+
+.footer-disclaimer {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  color: #bbb;
+  text-align: right;
+  max-width: 380px;
+  line-height: 1.6;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 640px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-nav {
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-disclaimer {
+    text-align: center;
+    max-width: 100%;
+  }
+}

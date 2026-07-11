@@ -1,0 +1,4 @@
+/* App-level layout containment for paint performance */
+.page-enter {
+  contain: layout style;
+}

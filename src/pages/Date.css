@@ -1,0 +1,305 @@
+.date-page {
+  min-height: 100vh;
+  padding: 70px 20px 90px;
+  max-width: 860px;
+  margin: auto;
+}
+
+/* ── HERO ── */
+.date-hero {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.date-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a96e;
+  margin-bottom: 16px;
+}
+
+.date-hero h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
+  font-weight: 300;
+  color: #1a1a1a;
+  letter-spacing: 2px;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+.date-hero-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.date-hero-line span {
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(to right, transparent, #c9a96e);
+}
+
+.date-hero-line span:last-child {
+  background: linear-gradient(to left, transparent, #c9a96e);
+}
+
+.date-hero-line em {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #c9a96e;
+  letter-spacing: 2px;
+}
+
+.date-intro {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15.5px;
+  line-height: 2;
+  color: #555;
+  max-width: 620px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+/* ── MOOD QUOTE ── */
+.date-quote {
+  text-align: center;
+  padding: 48px 40px;
+  margin-bottom: 56px;
+  position: relative;
+  background: linear-gradient(135deg, rgba(201,169,110,0.07), rgba(255,255,255,0.5));
+  border: 1px solid rgba(201,169,110,0.18);
+  border-radius: 20px;
+}
+
+.date-quote-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 100px;
+  line-height: 0.6;
+  color: rgba(201, 169, 110, 0.25);
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.date-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: italic;
+  color: #444;
+  line-height: 1.8;
+  max-width: 580px;
+  margin: 0 auto;
+  letter-spacing: 0.3px;
+}
+
+/* ── IDEAL DATE CARDS ── */
+.date-section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a96e;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.date-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.date-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  border-radius: 16px;
+  padding: 28px 22px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(180, 140, 60, 0.06);
+}
+
+.date-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(180, 140, 60, 0.12);
+}
+
+.date-card-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.date-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.date-card p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  color: #666;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+/* ── ETIQUETTE ── */
+.date-etiquette {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 169, 110, 0.22);
+  border-radius: 20px;
+  padding: 44px 48px;
+  margin-bottom: 56px;
+  box-shadow: 0 4px 30px rgba(180, 140, 60, 0.07);
+}
+
+.date-etiquette-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.date-etiquette-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9a96e;
+  margin-bottom: 32px;
+}
+
+.etiquette-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.etiquette-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.1);
+}
+
+.etiquette-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.etiquette-item:first-child {
+  padding-top: 0;
+}
+
+.etiquette-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #c9a96e;
+  min-width: 28px;
+  line-height: 1.4;
+}
+
+.etiquette-item div h5 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+}
+
+.etiquette-item div p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+/* ── CLOSING ── */
+.date-closing {
+  text-align: center;
+  padding: 48px 32px;
+  background: linear-gradient(135deg, rgba(201,169,110,0.08), rgba(255,255,255,0.5));
+  border: 1px solid rgba(201, 169, 110, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(180, 140, 60, 0.06);
+}
+
+.date-closing h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.date-closing p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.9;
+  max-width: 500px;
+  margin: 0 auto 28px;
+  font-weight: 300;
+}
+
+.date-closing-sig {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 300;
+  color: #c9a96e;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .date-hero h2 {
+    font-size: 38px;
+  }
+
+  .date-cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .date-etiquette {
+    padding: 28px 22px;
+  }
+
+  .date-closing {
+    padding: 36px 20px;
+  }
+
+  .date-closing h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .date-hero h2 {
+    font-size: 30px;
+  }
+
+  .date-page {
+    padding: 50px 16px 70px;
+  }
+}
