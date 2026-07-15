@@ -35,6 +35,20 @@ export default function Footer() {
           <div className="footer-diamond" />
         </div>
 
+        {/* CITIES */}
+        <div className="footer-cities">
+          <p className="footer-cities-label">Available in</p>
+          <div className="footer-cities-links">
+            <NavLink to="/sydney">Sydney</NavLink>
+            <NavLink to="/melbourne">Melbourne</NavLink>
+            <NavLink to="/brisbane">Brisbane</NavLink>
+            <NavLink to="/perth">Perth</NavLink>
+            <NavLink to="/adelaide">Adelaide</NavLink>
+            <NavLink to="/gold-coast">Gold Coast</NavLink>
+            <NavLink to="/canberra">Canberra</NavLink>
+          </div>
+        </div>
+
         {/* BOTTOM ROW */}
         <div className="footer-bottom">
           <p className="footer-copy">

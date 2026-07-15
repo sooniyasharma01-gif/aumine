@@ -23,6 +23,7 @@ import Journal      from "./pages/Journal";
 import Wishlist     from "./pages/Wishlist";
 import NotFound     from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CityPage     from "./pages/CityPage";
 
 function CursorGlow() {
   const glowRef = useRef(null);
@@ -102,6 +103,7 @@ export default function App() {
             <Route path="/journal"     element={<Journal />} />
             <Route path="/wishlist"    element={<Wishlist />} />
             <Route path="/privacy"     element={<PrivacyPolicy />} />
+            <Route path="/:city"       element={<CityPage />} />
             <Route path="*"            element={<NotFound />} />
           </Routes>
         </PageWrapper>

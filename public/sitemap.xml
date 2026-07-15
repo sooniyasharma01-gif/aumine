@@ -41,4 +41,39 @@
     <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/availability"/>
     <priority>0.8</priority><changefreq>weekly</changefreq>
   </url>
+  <url>
+    <loc>https://auteena.com/sydney</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/sydney"/>
+    <priority>0.9</priority><changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/melbourne</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/melbourne"/>
+    <priority>0.9</priority><changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/brisbane</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/brisbane"/>
+    <priority>0.9</priority><changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/perth</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/perth"/>
+    <priority>0.9</priority><changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/adelaide</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/adelaide"/>
+    <priority>0.9</priority><changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/gold-coast</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/gold-coast"/>
+    <priority>0.9</priority><changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://auteena.com/canberra</loc>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://auteena.com/canberra"/>
+    <priority>0.9</priority><changefreq>weekly</changefreq>
+  </url>
 </urlset>
