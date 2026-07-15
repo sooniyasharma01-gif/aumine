@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting…</title>
+  <script>
+    // GitHub Pages SPA workaround.
+    // Saves the attempted URL and redirects to index.html,
+    // which then restores it via history.replaceState before React loads.
+    sessionStorage.redirect = location.href;
+    location.replace('/');
+  </script>
+</head>
+<body>
+</body>
+</html>
