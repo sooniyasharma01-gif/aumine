@@ -3,7 +3,8 @@ import useScrollReveal from "../hooks/useScrollReveal";
 import g8Img from "../assets/GalleryImg/g8.jpeg";
 
 const rates = [
-  { duration: "1 Hour — GFE (2 shots included)", price: "AUD $250", tag: "★ Satisfy GF Experience" },
+  { duration: "30 minutes — GFE (1 shot included)", price: "AUD $200", tag: "★ Satisfy GF Experience" },
+  { duration: "1 Hour — GFE (2 shots included)", price: "AUD $350", tag: "★ Satisfy GF Experience" },
   { duration: "2 Hour ", price: "AUD $500", tag: "★ Satisfy GF Experience" },
   { duration: "4 Hour ", price: "AUD $900", tag: "★ Satisfy GF Experience" },
   { duration: "Natural Anal", price: "AUD $100 extra" },
@@ -67,27 +68,6 @@ export default function Rates() {
         </p>
       </div>
 
-      {/* RATES */}
-      <div className="rates-section-label reveal" ref={ratesList}>
-        <h3>Investment</h3>
-        <p>Incall · Outcall</p>
-      </div>
-
-      <div className="rates-list reveal" ref={ratesList}>
-        {rates.map((r) => (
-          <div key={r.duration} className={`rate-row${r.preferred ? " preferred" : ""}`}>
-            <div className="rate-duration">
-              {r.duration}
-              {r.tag && <span className="rate-tag">{r.tag}</span>}
-            </div>
-            <div className={`rate-price${r.small ? " small" : ""}`}>{r.price}</div>
-          </div>
-        ))}
-      </div>
-
-      {/* <TestimonialTicker /> */}
-
-
       {/* DEPOSIT */}
       <div className="deposit-card reveal" ref={deposit}>
         <p className="deposit-card-title">Booking & Deposit</p>
@@ -95,18 +75,20 @@ export default function Rates() {
           <span className="deposit-icon">💳</span>
           <span>A <strong>AUD $100 deposit</strong> is due via <strong>Bank Transfer</strong> at the time of booking — this goes towards your total. The remainder is also paid via <strong>bank transfer to my Australian account</strong> prior to our meeting.</span>
         </div>
-        <div className="deposit-row deposit-row--notice">
-          <span className="deposit-icon">⚠️</span>
-          <div className="deposit-notice-body">
-            <p className="deposit-notice-title">Important — Payment to Australian Account</p>
-            <p>All payments are made via direct bank transfer to my <strong>Australian bank account</strong>. It's simple, fast, and completely secure — no apps or third-party services needed.</p>
-            <ul className="deposit-notice-list">
-              <li><strong>Safe & traceable.</strong> A bank transfer creates a clear, timestamped record for both of us — full proof of payment with zero ambiguity.</li>
-              <li><strong>No awkward cash exchange.</strong> Paying in advance means we can focus entirely on enjoying our time together from the very first moment.</li>
-              <li><strong>Local & straightforward.</strong> My Australian account accepts standard bank transfers from any Australian bank instantly via PayID or BSB/Account number.</li>
-              <li><strong>Confirms genuine intent.</strong> Clients comfortable with a simple transfer are always the most respectful and serious — it's a small but meaningful sign of good faith.</li>
+        <div className="deposit-row deposit-row--trust">
+          <span className="deposit-icon">🛡️</span>
+          <div className="trust-block">
+            <p className="trust-block-title">I Understand Your Hesitation</p>
+            <p className="trust-block-intro">I know sending money to someone you haven't met feels risky. Here's why my regulars never think twice:</p>
+            <ul className="trust-block-list">
+              <li><strong>My real identity is tied to my bank.</strong> Australian banks require full ID verification. If I took your money and disappeared, you'd have a traceable record — I'd be putting myself at legal risk. That alone should tell you I have zero reason to scam anyone.</li>
+              <li><strong>My reputation is my livelihood.</strong> One bad review ends a career in this industry. I've built mine over years of genuine, verified encounters — I'm not risking that for $100.</li>
+              <li><strong>You'll receive a confirmation.</strong> Once your deposit clears, I send you a personal confirmation with the date, time, and location details. You'll know everything is real before our meeting.</li>
+              <li><strong>100% refund if I cancel.</strong> If I can't make it for any reason, your deposit is returned in full — immediately, no questions, no runaround.</li>
+              <li><strong>It's not extra — it's part of your total.</strong> The $100 simply holds your spot. It's deducted from the final rate. You're not paying more, just paying earlier.</li>
+              <li><strong>It protects both of us.</strong> I've had too many no-shows. A small deposit means you're serious, and I can block real time for you without worrying. It's mutual respect.</li>
             </ul>
-            <p className="deposit-notice-footer">This arrangement has worked smoothly with every client. You are in safe hands — I take my reputation seriously and every transaction is handled with complete honesty.</p>
+            <p className="trust-block-footer">Still unsure? Message me first — I'm happy to chat and answer any questions. No pressure.</p>
           </div>
         </div>
 
@@ -129,6 +111,29 @@ export default function Rates() {
           <span>In the rare event I must cancel, your deposit will be fully refunded. <em>(20% retained for dates 5 hours or more.)</em></span>
         </div>
       </div>
+
+
+      {/* RATES */}
+      <div className="rates-section-label reveal" ref={ratesList}>
+        <h3>Investment</h3>
+        <p>Incall · Outcall</p>
+      </div>
+
+      <div className="rates-list reveal" ref={ratesList}>
+        {rates.map((r) => (
+          <div key={r.duration} className={`rate-row${r.preferred ? " preferred" : ""}`}>
+            <div className="rate-duration">
+              {r.duration}
+              {r.tag && <span className="rate-tag">{r.tag}</span>}
+            </div>
+            <div className={`rate-price${r.small ? " small" : ""}`}>{r.price}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* <TestimonialTicker /> */}
+
+
 
 
       {/* WHAT'S INCLUDED */}
