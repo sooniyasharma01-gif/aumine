@@ -50,9 +50,9 @@ export default function Rates() {
 
       {/* PROFILE IMAGE */}
       <div className="rates-profile-img">
-        <img src={g8Img} alt="Soniya" />
+        <img src={g8Img} alt="Teena" />
         <div className="rates-profile-overlay">
-          <span>soniyaescort.com</span>
+          <span>auteena.com</span>
         </div>
       </div>
 

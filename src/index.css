@@ -143,3 +143,27 @@ html {
     display: block;
   }
 }
+
+/* ══════════════════════════════════
+   IMAGE PROTECTION — prevent saving/downloading
+══════════════════════════════════ */
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+}
+
+/* Shield overlay on images to block right-click */
+.img-shield {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: auto;
+  -webkit-user-select: none;
+  user-select: none;
+}

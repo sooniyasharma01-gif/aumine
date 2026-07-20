@@ -9,7 +9,13 @@ export default defineConfig({
       jpeg: { quality: 85, mozjpeg: true },
       jpg:  { quality: 85, mozjpeg: true },
       webp: { quality: 85 },
+      // Strip ALL metadata (EXIF, GPS, camera info, timestamps) from images
+      png:  { quality: 85 },
     }),
   ],
-  base: '/'
+  base: '/',
+  build: {
+    // Disable source maps in production — prevents source code exposure
+    sourcemap: false,
+  },
 })
