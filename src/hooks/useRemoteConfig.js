@@ -26,12 +26,19 @@ export default function useRemoteConfig() {
   const [config, setConfig] = useState(DEFAULT_CONFIG);
 
   useEffect(() => {
-    if (!GIST_RAW_URL) return; // Use defaults if no gist URL set
+    if (!GIST_RAW_URL) return;
 
     fetch(GIST_RAW_URL, { cache: "no-store" })
       .then((res) => res.json())
       .then((data) => {
-        setConfig((prev) => ({ ...prev, ...data }));
+        // Map Gist format to config format
+        const mapped = { ...data };
+        if (data.bankDetails) {
+          mapped.bankName = data.bankDetails.accountName || DEFAULT_CONFIG.bankName;
+          mapped.bankBSB = data.bankDetails.bsb || DEFAULT_CONFIG.bankBSB;
+          mapped.bankAccount = data.bankDetails.accountNumber || DEFAULT_CONFIG.bankAccount;
+        }
+        setConfig((prev) => ({ ...prev, ...mapped }));
       })
       .catch(() => {
         // Silently fall back to defaults
