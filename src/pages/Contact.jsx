@@ -1,12 +1,14 @@
 import "./NewPages.css";
 import useScrollReveal from "../hooks/useScrollReveal";
-
-const WA_URL = "https://wa.me/61468258068?text=Hi%20Teena%2C%20I%27d%20love%20to%20connect%20with%20you.";
-const TG_URL = "https://t.me/61468258068";
+import useRemoteConfig from "../hooks/useRemoteConfig";
 
 export default function Contact() {
   const hero = useScrollReveal();
   const card = useScrollReveal();
+  const config = useRemoteConfig();
+
+  const WA_URL = `https://wa.me/${config.phone}?text=${encodeURIComponent(config.whatsappMessage)}`;
+  const TG_URL = `https://t.me/${config.telegramHandle}`;
 
   return (
     <div className="np-page">

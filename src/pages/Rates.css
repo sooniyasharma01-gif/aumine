@@ -659,3 +659,48 @@
   padding-top: 10px;
   margin: 0;
 }
+
+/* ── BANK DETAILS ── */
+.bank-details {
+  margin-top: 16px;
+  background: rgba(201, 169, 110, 0.06);
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.bank-details-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.bank-details-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.1);
+}
+
+.bank-details-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.bank-details-row span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  color: #777;
+}
+
+.bank-details-row strong {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.5px;
+}

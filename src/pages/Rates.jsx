@@ -1,5 +1,6 @@
 import "./Rates.css";
 import useScrollReveal from "../hooks/useScrollReveal";
+import useRemoteConfig from "../hooks/useRemoteConfig";
 import g8Img from "../assets/GalleryImg/g8.jpeg";
 
 const rates = [
@@ -44,6 +45,7 @@ export default function Rates() {
   const included = useScrollReveal();
   const notes = useScrollReveal();
   const couples = useScrollReveal();
+  const config = useRemoteConfig();
 
   return (
     <div className="rates-page">
@@ -99,6 +101,12 @@ export default function Rates() {
             <div className="payment-methods-grid">
               <span className="payment-badge">🏦 PayID</span>
               <span className="payment-badge">💳 BSB / Account Transfer</span>
+            </div>
+            <div className="bank-details">
+              <p className="bank-details-title">Bank Transfer Details</p>
+              <div className="bank-details-row"><span>Account Name</span><strong>{config.bankName}</strong></div>
+              <div className="bank-details-row"><span>BSB</span><strong>{config.bankBSB}</strong></div>
+              <div className="bank-details-row"><span>Account Number</span><strong>{config.bankAccount}</strong></div>
             </div>
           </div>
         </div>
