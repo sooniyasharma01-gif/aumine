@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import "./NotePopup.css";
-
-const WA_URL = "https://wa.me/61468258068?text=Hi%20Teena%2C%20I%27d%20love%20to%20connect%20with%20you.";
+import useRemoteConfig from "../../hooks/useRemoteConfig";
 
 export default function NotePopup() {
+  const config = useRemoteConfig();
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(() => !!sessionStorage.getItem("note_dismissed"));
+
+  const WA_URL = `https://wa.me/${config.phone}?text=${encodeURIComponent(config.whatsappMessage || "Hi Teena, I'd love to connect with you.")}`;
 
   useEffect(() => {
     if (dismissed) return;

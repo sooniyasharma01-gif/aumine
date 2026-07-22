@@ -1,10 +1,12 @@
 import { useLocation } from "react-router-dom";
 import "./BookCTA.css";
-
-const WA_URL = "https://wa.me/61468258068?text=Hi%20Teena%2C%20I%27d%20love%20to%20book%20a%20date%20with%20you.";
+import useRemoteConfig from "../../hooks/useRemoteConfig";
 
 export default function BookCTA() {
   const location = useLocation();
+  const config = useRemoteConfig();
+
+  const WA_URL = `https://wa.me/${config.phone}?text=${encodeURIComponent("Hi Teena, I'd love to book a date with you.")}`;
 
   if (location.pathname === "/date") return null;
 

@@ -1,7 +1,15 @@
 import "./NewPages.css";
 import useScrollReveal from "../hooks/useScrollReveal";
+import useRemoteConfig from "../hooks/useRemoteConfig";
 
-const WA_URL = "https://wa.me/61468258068?text=Hi%20Teena%2C%20I%27d%20like%20to%20check%20your%20availability.";
+export default function Availability() {
+  const hero     = useScrollReveal();
+  const sched    = useScrollReveal();
+  const notes    = useScrollReveal();
+  const cta      = useScrollReveal();
+  const config   = useRemoteConfig();
+
+  const WA_URL = `https://wa.me/${config.phone}?text=${encodeURIComponent("Hi Teena, I'd like to check your availability.")}`;
 
 const schedule = [
   { day: "Monday",    status: "available" },
@@ -14,12 +22,6 @@ const schedule = [
 ];
 
 const statusLabel = { available: "Available", limited: "Limited", unavailable: "Unavailable" };
-
-export default function Availability() {
-  const hero     = useScrollReveal();
-  const sched    = useScrollReveal();
-  const notes    = useScrollReveal();
-  const cta      = useScrollReveal();
 
   return (
     <div className="np-page">
