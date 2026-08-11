@@ -97,16 +97,13 @@ export default function Rates() {
         <div className="deposit-row">
           <span className="deposit-icon">🏦</span>
           <div className="payment-methods">
-            <p className="payment-methods-title">Accepted Payment Methods</p>
+            <p className="payment-methods-title">Accepted Payment Method</p>
             <div className="payment-methods-grid">
               <span className="payment-badge">🏦 PayID</span>
-              <span className="payment-badge">💳 BSB / Account Transfer</span>
             </div>
             <div className="bank-details">
-              <p className="bank-details-title">Bank Transfer Details</p>
-              <div className="bank-details-row"><span>Account Name</span><strong>{config.bankName}</strong></div>
-              <div className="bank-details-row"><span>BSB</span><strong>{config.bankBSB}</strong></div>
-              <div className="bank-details-row"><span>Account Number</span><strong>{config.bankAccount}</strong></div>
+              <p className="bank-details-title">PayID Details</p>
+              <div className="bank-details-row"><span>PayID</span><strong>+61470535396</strong></div>
             </div>
           </div>
         </div>
