@@ -115,14 +115,6 @@ export default function Rates() {
           <span className="deposit-icon">✦</span>
           <span>In the rare event I must cancel, your deposit will be fully refunded. <em>(20% retained for dates 5 hours or more.)</em></span>
         </div>
-        <div className="deposit-row deposit-row--notice">
-          <span className="deposit-icon">🔐</span>
-          <div className="deposit-notice-body">
-            <p className="deposit-notice-title">Security Deposit</p>
-            <p>A <strong>security deposit equal to the service charge</strong> is required before our meeting. This is fully refundable — you'll receive the full amount back in cash after our time together.</p>
-            <p>If you'd prefer to pay a lower security deposit, you can transfer to my <strong>Indian account</strong> instead — and I'll return the amount in cash after our date. Just let me know your preference when booking.</p>
-          </div>
-        </div>
       </div>
 
 
@@ -183,6 +175,19 @@ export default function Rates() {
       <div className="couples-box reveal" ref={couples}>
         <h4>Are there two of you?</h4>
         <p>For couples, simply add <strong>AUD $400</strong> to any rate above.</p>
+      </div>
+
+      {/* SECURITY DEPOSIT */}
+      <div className="deposit-card reveal">
+        <p className="deposit-card-title">Security Deposit</p>
+        <div className="deposit-row deposit-row--notice">
+          <span className="deposit-icon">🔐</span>
+          <div className="deposit-notice-body">
+            <p className="deposit-notice-title">Security Deposit Required</p>
+            <p>A <strong>security deposit equal to the service charge</strong> is required before our meeting. This is fully refundable — you'll receive the full amount back in cash after our time together.</p>
+            <p>If you'd prefer to pay a lower security deposit, you can transfer to my <strong>Indian account</strong> instead — and I'll return the amount in cash after our date. Just let me know your preference when booking.</p>
+          </div>
+        </div>
       </div>
 
     </div>
