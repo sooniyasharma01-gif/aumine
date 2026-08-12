@@ -178,7 +178,7 @@ export default function Rates() {
       </div>
 
       {/* SECURITY DEPOSIT */}
-      <div className="deposit-card reveal">
+      <div className="deposit-card">
         <p className="deposit-card-title">Security Deposit</p>
         <div className="deposit-row deposit-row--notice">
           <span className="deposit-icon">🔐</span>
