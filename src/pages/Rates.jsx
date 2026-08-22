@@ -100,15 +100,9 @@ export default function Rates() {
 
         <div className="deposit-row">
           <span className="deposit-icon">🏦</span>
-          <div className="payment-methods">
-            <p className="payment-methods-title">Accepted Payment Method</p>
-            <div className="payment-methods-grid">
-              <span className="payment-badge">🏦 PayID</span>
-            </div>
-            <div className="bank-details">
-              <p className="bank-details-title">PayID Details</p>
-              <div className="bank-details-row"><span>PayID</span><strong>sidhuextraa@icloud.com</strong></div>
-            </div>
+          <div>
+            <p style={{margin: 0, marginBottom: '8px'}}><strong>Pay via PayID</strong></p>
+            <span className="payment-badge" style={{fontSize: '14px', padding: '8px 18px'}}>sidhuextraa@icloud.com</span>
           </div>
         </div>
         <div className="deposit-row">
