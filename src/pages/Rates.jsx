@@ -4,13 +4,13 @@ import useRemoteConfig from "../hooks/useRemoteConfig";
 import g8Img from "../assets/GalleryImg/g8.jpeg";
 
 const rates = [
-  { duration: "30 minutes — GFE (1 shot included)", price: "AUD $200", tag: "★ Satisfy GF Experience" },
-  { duration: "1 Hour — GFE (2 shots included)", price: "AUD $350", tag: "★ Satisfy GF Experience" },
-  { duration: "2 Hour ", price: "AUD $500", tag: "★ Satisfy GF Experience" },
-  { duration: "4 Hour ", price: "AUD $900", tag: "★ Satisfy GF Experience" },
-  { duration: "Natural Anal", price: "AUD $100 extra" },
-  { duration: "Overnight — 10 Hours", price: "AUD $1,500" },
-  { duration: "Video Call — 1 Time Satisfy", price: "AUD $80" },
+  { duration: "30 minutes — GFE (1 shot included)", price: "AUD $300", tag: "★ Satisfy GF Experience" },
+  { duration: "1 Hour — GFE (2 shots included)", price: "AUD $450", tag: "★ Satisfy GF Experience" },
+  { duration: "2 Hour", price: "AUD $650", tag: "★ Satisfy GF Experience" },
+  { duration: "4 Hour", price: "AUD $900", tag: "★ Satisfy GF Experience" },
+  { duration: "Natural Anal", price: "AUD $200 extra" },
+  { duration: "Overnight — 10 Hours", price: "AUD $1,900" },
+  { duration: "Video Call — 1 Time Satisfy", price: "AUD $130" },
 ];
 
 const testimonials = [
