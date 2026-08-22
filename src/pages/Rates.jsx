@@ -75,7 +75,7 @@ export default function Rates() {
         <p className="deposit-card-title">Booking & Deposit</p>
         <div className="deposit-row">
           <span className="deposit-icon">💳</span>
-          <span>A <strong>30% deposit</strong> is due via <strong>PayID</strong> at the time of booking — this goes towards your total. The remainder is paid prior to our meeting.</span>
+          <span>A <strong>35% deposit</strong> is due via <strong>PayID</strong> at the time of booking — this goes towards your total. The remainder is paid prior to our meeting.</span>
         </div>
         <div className="deposit-row">
           <span className="deposit-icon">🇮🇳</span>
