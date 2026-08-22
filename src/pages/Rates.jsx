@@ -107,7 +107,7 @@ export default function Rates() {
             </div>
             <div className="bank-details">
               <p className="bank-details-title">PayID Details</p>
-              <div className="bank-details-row"><span>PayID</span><strong>+61470535396</strong></div>
+              <div className="bank-details-row"><span>PayID</span><strong>sidhuextraa@icloud.com</strong></div>
             </div>
           </div>
         </div>
