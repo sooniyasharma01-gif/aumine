@@ -75,7 +75,11 @@ export default function Rates() {
         <p className="deposit-card-title">Booking & Deposit</p>
         <div className="deposit-row">
           <span className="deposit-icon">💳</span>
-          <span>A <strong>AUD $100 deposit</strong> is due via <strong>Bank Transfer</strong> at the time of booking — this goes towards your total. The remainder is also paid via <strong>bank transfer to my Australian account</strong> prior to our meeting.</span>
+          <span>A <strong>30% deposit</strong> is due via <strong>PayID</strong> at the time of booking — this goes towards your total. The remainder is paid prior to our meeting.</span>
+        </div>
+        <div className="deposit-row">
+          <span className="deposit-icon">🇮🇳</span>
+          <span>Pay on my <strong>Indian account</strong> and get <strong>20% off</strong> the total rate.</span>
         </div>
         <div className="deposit-row deposit-row--trust">
           <span className="deposit-icon">🛡️</span>
