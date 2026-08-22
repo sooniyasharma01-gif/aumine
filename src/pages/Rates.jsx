@@ -100,9 +100,13 @@ export default function Rates() {
 
         <div className="deposit-row">
           <span className="deposit-icon">🏦</span>
-          <div>
-            <p style={{margin: 0, marginBottom: '8px'}}><strong>Pay via PayID</strong></p>
-            <span className="payment-badge" style={{fontSize: '14px', padding: '8px 18px', cursor: 'pointer'}} onClick={() => {navigator.clipboard.writeText('sidhuextraa@icloud.com'); alert('PayID copied!');}}>sidhuextraa@icloud.com 📋</span>
+          <div className="payid-block">
+            <p className="payid-label">Pay via PayID</p>
+            <div className="payid-copy-row" onClick={() => {navigator.clipboard.writeText('sidhuextraa@icloud.com'); const el = document.querySelector('.payid-copied'); el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 2000);}}>
+              <span className="payid-value">sidhuextraa@icloud.com</span>
+              <span className="payid-copy-btn">Copy</span>
+              <span className="payid-copied">Copied ✓</span>
+            </div>
           </div>
         </div>
         <div className="deposit-row">
