@@ -243,3 +243,11 @@ a:active, button:active, .rate-row:active, .included-item:active, .trust-badge:a
 .img-skeleton.loaded img {
   opacity: 1;
 }
+
+/* ══════════════════════════════════
+   DISABLE ZOOM (mobile)
+══════════════════════════════════ */
+
+* {
+  touch-action: pan-x pan-y;
+}

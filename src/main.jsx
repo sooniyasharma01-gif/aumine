@@ -23,6 +23,13 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
   }
 });
+// Block pinch zoom on mobile (iOS ignores meta viewport)
+document.addEventListener("touchmove", (e) => {
+  if (e.touches.length > 1) e.preventDefault();
+}, { passive: false });
+document.addEventListener("gesturestart", (e) => e.preventDefault());
+document.addEventListener("gesturechange", (e) => e.preventDefault());
+document.addEventListener("gestureend", (e) => e.preventDefault());
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
