@@ -102,7 +102,7 @@ export default function Rates() {
           <span className="deposit-icon">🏦</span>
           <div>
             <p style={{margin: 0, marginBottom: '8px'}}><strong>Pay via PayID</strong></p>
-            <span className="payment-badge" style={{fontSize: '14px', padding: '8px 18px'}}>sidhuextraa@icloud.com</span>
+            <span className="payment-badge" style={{fontSize: '14px', padding: '8px 18px', cursor: 'pointer'}} onClick={() => {navigator.clipboard.writeText('sidhuextraa@icloud.com'); alert('PayID copied!');}}>sidhuextraa@icloud.com 📋</span>
           </div>
         </div>
         <div className="deposit-row">
