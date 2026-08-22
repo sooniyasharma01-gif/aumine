@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import "./Rates.css";
 import useScrollReveal from "../hooks/useScrollReveal";
 import useRemoteConfig from "../hooks/useRemoteConfig";
@@ -46,9 +47,26 @@ export default function Rates() {
   const notes = useScrollReveal();
   const couples = useScrollReveal();
   const config = useRemoteConfig();
+  const [stickyVisible, setStickyVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setStickyVisible(window.scrollY > 400);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const WA_URL = `https://wa.me/${config.phone}?text=${encodeURIComponent("Hi Teena, I'd love to book a date with you.")}`;
 
   return (
     <div className="rates-page">
+
+      {/* STICKY BOOK BAR (mobile) */}
+      <div className={`sticky-book-bar ${stickyVisible ? "visible" : ""}`}>
+        <span className="sticky-book-bar-text">From <strong>AUD $300</strong></span>
+        <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="sticky-book-bar-btn">Book Now</a>
+      </div>
 
       {/* PROFILE IMAGE */}
       <div className="rates-profile-img">
@@ -91,11 +109,29 @@ export default function Rates() {
               <li><strong>My reputation is my livelihood.</strong> One bad review ends a career in this industry. I've built mine over years of genuine, verified encounters — I'm not risking that for $100.</li>
               <li><strong>You'll receive a confirmation.</strong> Once your deposit clears, I send you a personal confirmation with the date, time, and location details. You'll know everything is real before our meeting.</li>
               <li><strong>100% refund if I cancel.</strong> If I can't make it for any reason, your deposit is returned in full — immediately, no questions, no runaround.</li>
-              <li><strong>It's not extra — it's part of your total.</strong> The $100 simply holds your spot. It's deducted from the final rate. You're not paying more, just paying earlier.</li>
+              <li><strong>It's not extra — it's part of your total.</strong> The 35% simply holds your spot. It's deducted from the final rate. You're not paying more, just paying earlier.</li>
               <li><strong>It protects both of us.</strong> I've had too many no-shows. A small deposit means you're serious, and I can block real time for you without worrying. It's mutual respect.</li>
             </ul>
             <p className="trust-block-footer">Still unsure? Message me first — I'm happy to chat and answer any questions. No pressure.</p>
           </div>
+        </div>
+
+        <div className="deposit-row deposit-row--notice">
+          <span className="deposit-icon">✅</span>
+          <div className="deposit-notice-body">
+            <p className="deposit-notice-title">What Happens After You Pay</p>
+            <ul className="deposit-notice-list">
+              <li><strong>Instant confirmation</strong> — you'll receive a personal message within minutes confirming your date, time, and meeting details.</li>
+              <li><strong>My real photo</strong> — I'll send you a live selfie so you know exactly who you're meeting. No surprises.</li>
+              <li><strong>Direct contact</strong> — once confirmed, you'll have my personal WhatsApp for any last-minute changes or questions.</li>
+              <li><strong>Deposit deducted from total</strong> — you only pay the remaining balance when we meet. It's not extra.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="deposit-row">
+          <span className="deposit-icon">💬</span>
+          <span><em>"I was nervous about the deposit too, but she sent a confirmation straight away and showed up looking even better than her photos. Completely legit."</em> — Recent client, Sydney</span>
         </div>
 
         <div className="deposit-row">

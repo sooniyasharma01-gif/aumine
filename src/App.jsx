@@ -10,6 +10,7 @@ import BackToTop   from "./components/BackToTop/BackToTop";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
 import CookieBanner from "./components/CookieBanner/CookieBanner";
 import NotePopup   from "./components/NotePopup/NotePopup";
+import BottomNav   from "./components/BottomNav/BottomNav";
 
 import Intro        from "./pages/Intro";
 import Gallery      from "./pages/Gallery";
@@ -50,6 +51,7 @@ function PageWrapper({ children }) {
 
   useEffect(() => {
     if (prev.current !== location.pathname) {
+      window.scrollTo(0, 0);
       setCurtain(true);
       const t = setTimeout(() => setCurtain(false), 560);
       prev.current = location.pathname;
@@ -114,6 +116,7 @@ export default function App() {
       <BackToTop />
       <CookieBanner />
       <NotePopup />
+      <BottomNav />
     </div>
   );
 }

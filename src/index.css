@@ -167,3 +167,79 @@ img {
   -webkit-user-select: none;
   user-select: none;
 }
+
+/* ══════════════════════════════════
+   HAPTIC TAP FEEDBACK
+══════════════════════════════════ */
+
+a, button, .rate-row, .included-item, .trust-badge, .city-service-card, .bottom-nav-item, .payment-badge, .payid-copy-row {
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.1s ease;
+}
+
+a:active, button:active, .rate-row:active, .included-item:active, .trust-badge:active, .city-service-card:active, .bottom-nav-item:active, .payment-badge:active, .payid-copy-row:active {
+  transform: scale(0.96);
+}
+
+/* ══════════════════════════════════
+   SMOOTHER PAGE TRANSITIONS (slide)
+══════════════════════════════════ */
+
+@keyframes page-slide-in {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.page-enter {
+  animation: page-slide-in 0.35s ease both;
+}
+
+.page-curtain {
+  position: fixed;
+  inset: 0;
+  background: #1a1410;
+  z-index: 8000;
+  animation: curtain-fade 0.3s ease both;
+  pointer-events: none;
+}
+
+@keyframes curtain-fade {
+  from { opacity: 0.6; }
+  to   { opacity: 0; }
+}
+
+/* ══════════════════════════════════
+   SKELETON LOADING FOR IMAGES
+══════════════════════════════════ */
+
+.img-skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #e8e4de;
+}
+
+.img-skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(100%); }
+}
+
+.img-skeleton img {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.img-skeleton.loaded::after {
+  display: none;
+}
+
+.img-skeleton.loaded img {
+  opacity: 1;
+}

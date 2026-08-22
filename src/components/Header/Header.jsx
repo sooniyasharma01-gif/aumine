@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 
@@ -14,12 +14,31 @@ const moreLinks = [
 export default function Header() {
   const [open, setOpen]         = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const [hidden, setHidden]     = useState(false);
+  const lastScroll = useRef(0);
   const close = () => { setOpen(false); setDropdown(false); };
 
+  useEffect(() => {
+    const onScroll = () => {
+      const current = window.scrollY;
+      if (current > lastScroll.current && current > 80) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+      lastScroll.current = current;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${hidden ? "header--hidden" : ""}`}>
       <div className="header-inner">
-        <NavLink to="/" className="logo" onClick={close}>Teena</NavLink>
+        <NavLink to="/" className="logo" onClick={close}>
+          Teena
+          <span className="online-dot" />
+        </NavLink>
 
         <nav className="nav">
           <NavLink to="/intro">Intro</NavLink>

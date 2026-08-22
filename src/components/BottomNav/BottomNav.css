@@ -1,0 +1,71 @@
+/* Only show on mobile */
+.bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9000;
+    background: rgba(250, 247, 242, 0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(201, 169, 110, 0.2);
+    padding: 10px 8px env(safe-area-inset-bottom, 10px);
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -4px 24px rgba(180, 140, 60, 0.08);
+  }
+
+  .bottom-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: rgba(100, 90, 80, 0.55);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 12px;
+    transition: color 0.2s, background 0.2s, transform 0.15s;
+  }
+
+  .bottom-nav-item svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .bottom-nav-item.active {
+    color: #c9a96e;
+    background: rgba(201, 169, 110, 0.12);
+  }
+
+  .bottom-nav-item.active svg {
+    filter: drop-shadow(0 0 4px rgba(201, 169, 110, 0.4));
+  }
+
+  .bottom-nav-item:active {
+    transform: scale(0.9);
+  }
+
+  /* Add padding to body so content isn't hidden behind bottom nav */
+  body {
+    padding-bottom: 76px;
+  }
+
+  /* Move WhatsApp button above bottom nav */
+  .book-cta {
+    bottom: 88px;
+  }
+}
