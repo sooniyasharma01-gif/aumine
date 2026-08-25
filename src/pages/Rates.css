@@ -680,9 +680,9 @@
 
 .bank-details-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 0;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 0;
   border-bottom: 1px solid rgba(201, 169, 110, 0.1);
 }
 
@@ -693,16 +693,31 @@
 
 .bank-details-row span {
   font-family: 'DM Sans', sans-serif;
-  font-size: 13.5px;
-  color: #777;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #999;
 }
 
 .bank-details-row strong {
   font-family: 'DM Sans', sans-serif;
-  font-size: 14.5px;
+  font-size: 16px;
   font-weight: 500;
-  color: #333;
+  color: #1a1a1a;
   letter-spacing: 0.5px;
+}
+
+@media (min-width: 601px) {
+  .bank-details-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .bank-details-row strong {
+    font-size: 14.5px;
+  }
 }
 
 /* ── PAYID BLOCK ── */
