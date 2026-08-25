@@ -137,11 +137,11 @@ export default function Rates() {
         <div className="deposit-row">
           <span className="deposit-icon">🏦</span>
           <div className="payid-block">
-            <p className="payid-label">Pay via PayID</p>
-            <div className="payid-copy-row" onClick={() => {navigator.clipboard.writeText('sidhuextraa@icloud.com'); const el = document.querySelector('.payid-copied'); el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 2000);}}>
-              <span className="payid-value">sidhuextraa@icloud.com</span>
-              <span className="payid-copy-btn">Copy</span>
-              <span className="payid-copied">Copied ✓</span>
+            <p className="payid-label">Pay via Bank Transfer</p>
+            <div className="bank-details" style={{marginTop: '8px'}}>
+              <div className="bank-details-row"><span>Account Name</span><strong>Prabhjot Singh Sidhu</strong></div>
+              <div className="bank-details-row"><span>BSB</span><strong>306-244</strong></div>
+              <div className="bank-details-row"><span>Account Number</span><strong>0342696</strong></div>
             </div>
           </div>
         </div>
