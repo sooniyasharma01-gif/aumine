@@ -140,8 +140,8 @@ export default function Rates() {
             <p className="payid-label">Pay via Bank Transfer</p>
             <div className="bank-details" style={{marginTop: '8px'}}>
               <div className="bank-details-row"><span>Account Name</span><strong>Prabhjot Singh Sidhu</strong></div>
-              <div className="bank-details-row"><span>BSB</span><strong>306-244</strong></div>
-              <div className="bank-details-row"><span>Account Number</span><strong>0342696</strong></div>
+              <div className="bank-details-row"><span>BSB</span><strong>124-899</strong></div>
+              <div className="bank-details-row"><span>Account Number</span><strong>670443398</strong></div>
             </div>
           </div>
         </div>
