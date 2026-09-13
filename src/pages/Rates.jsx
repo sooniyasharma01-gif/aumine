@@ -109,14 +109,14 @@ export default function Rates() {
               <li><strong>My reputation is my livelihood.</strong> One bad review ends a career in this industry. I've built mine over years of genuine, verified encounters — I'm not risking that for $100.</li>
               <li><strong>You'll receive a confirmation.</strong> Once your deposit clears, I send you a personal confirmation with the date, time, and location details. You'll know everything is real before our meeting.</li>
               <li><strong>100% refund if I cancel.</strong> If I can't make it for any reason, your deposit is returned in full — immediately, no questions, no runaround.</li>
-              <li><strong>It's not extra — it's part of your total.</strong> The 35% simply holds your spot. It's deducted from the final rate. You're not paying more, just paying earlier.</li>
+              <li><strong>It's not extra — it's part of your total.</strong> The $100 simply holds your spot. It's deducted from the final rate. You're not paying more, just paying earlier.</li>
               <li><strong>It protects both of us.</strong> I've had too many no-shows. A small deposit means you're serious, and I can block real time for you without worrying. It's mutual respect.</li>
             </ul>
             <p className="trust-block-footer">Still unsure? Message me first — I'm happy to chat and answer any questions. No pressure.</p>
           </div>
         </div>
 
-        {/* <div className="deposit-row deposit-row--notice">
+        <div className="deposit-row deposit-row--notice">
           <span className="deposit-icon">✅</span>
           <div className="deposit-notice-body">
             <p className="deposit-notice-title">What Happens After You Pay</p>
@@ -127,7 +127,7 @@ export default function Rates() {
               <li><strong>Deposit deducted from total</strong> — you only pay the remaining balance when we meet. It's not extra.</li>
             </ul>
           </div>
-        </div> */}
+        </div>
 
         <div className="deposit-row">
           <span className="deposit-icon">💬</span>
