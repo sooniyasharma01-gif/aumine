@@ -5,12 +5,12 @@ import useRemoteConfig from "../hooks/useRemoteConfig";
 import g8Img from "../assets/GalleryImg/g8.jpeg";
 
 const rates = [
-  { duration: "30 minutes — GFE (1 shot included)", price: "AUD $300", tag: "★ Satisfy GF Experience" },
-  { duration: "1 Hour — GFE (2 shots included)", price: "AUD $450", tag: "★ Satisfy GF Experience" },
-  { duration: "2 Hour", price: "AUD $650", tag: "★ Satisfy GF Experience" },
-  { duration: "4 Hour", price: "AUD $900", tag: "★ Satisfy GF Experience" },
-  { duration: "Natural Anal", price: "AUD $200 extra" },
-  { duration: "Overnight — 10 Hours", price: "AUD $1,900" },
+  { duration: "30 minutes — GFE (1 shot included)", price: "AUD $200", tag: "★ Satisfy GF Experience" },
+  { duration: "1 Hour — GFE (2 shots included)", price: "AUD $350", tag: "★ Satisfy GF Experience" },
+  { duration: "2 Hour", price: "AUD $600", tag: "★ Satisfy GF Experience" },
+  { duration: "4 Hour", price: "AUD $800", tag: "★ Satisfy GF Experience" },
+  { duration: "Natural Anal", price: "AUD $100 extra" },
+  { duration: "Overnight — 10 Hours", price: "AUD $1,200" },
   { duration: "Video Call — 1 Time Satisfy", price: "AUD $130" },
 ];
 
@@ -93,11 +93,11 @@ export default function Rates() {
         <p className="deposit-card-title">Booking & Deposit</p>
         <div className="deposit-row">
           <span className="deposit-icon">💳</span>
-          <span>A <strong>35% deposit</strong> is due via <strong>PayID</strong> at the time of booking — this goes towards your total. The remainder is paid prior to our meeting.</span>
+          <span>A <strong>$100 deposit</strong> is due via <strong>PayID</strong> at the time of booking — this goes towards your total. The remainder is paid prior to our meeting.</span>
         </div>
         <div className="deposit-row">
           <span className="deposit-icon">🇮🇳</span>
-          <span>Pay on my <strong>Indian account</strong> and get <strong>20% off</strong> the total rate.</span>
+          <span>Pay on my <strong>Indian account</strong> and get <strong>10% off</strong> the total rate.</span>
         </div>
         <div className="deposit-row deposit-row--trust">
           <span className="deposit-icon">🛡️</span>
@@ -116,7 +116,7 @@ export default function Rates() {
           </div>
         </div>
 
-        <div className="deposit-row deposit-row--notice">
+        {/* <div className="deposit-row deposit-row--notice">
           <span className="deposit-icon">✅</span>
           <div className="deposit-notice-body">
             <p className="deposit-notice-title">What Happens After You Pay</p>
@@ -127,7 +127,7 @@ export default function Rates() {
               <li><strong>Deposit deducted from total</strong> — you only pay the remaining balance when we meet. It's not extra.</li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         <div className="deposit-row">
           <span className="deposit-icon">💬</span>
